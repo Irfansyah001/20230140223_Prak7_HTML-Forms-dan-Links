@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- Mendeklarasikan dokumen HTML5 -->
+<html lang="id"> <!-- Elemen utama HTML dengan bahasa Indonesia -->
+<head> <!-- Bagian kepala, berisi metadata halaman -->
+  <meta charset="UTF-8"> <!-- Mengatur karakter encoding UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat tampilan responsif di mobile -->
+  <title>Biodata</title> <!-- Judul halaman (terlihat di tab browser) -->
+  <link rel="stylesheet" href="form.css"> <!-- Menghubungkan file CSS eksternal -->
+</head>
+
+<body class="dark-form"> <!-- Awal isi halaman, memakai class tema gelap -->
+  <header> <!-- Bagian judul halaman -->
+    <h2>Isi Formulir Biodata Anda</h2> <!-- Judul besar pada form -->
+  </header>
+
+  <form id="biodataForm"> <!-- Form dengan ID untuk diakses lewat JavaScript -->
+    <label for="nama">Nama Lengkap anda:</label> <!-- Label untuk input nama -->
+    <input type="text" id="nama" name="nama" required> <!-- Input teks wajib diisi untuk nama -->
+
+    <label for="umur">Umur anda:</label> <!-- Label untuk input umur -->
+    <input type="number" id="umur" name="umur" required> <!-- Input angka wajib diisi untuk umur -->
+
+    <label>Jenis Kelamin:</label> <!-- Label untuk kelompok radio button -->
+    <div class="inline-options"> <!-- Container radio agar sejajar -->
+      <label><input type="radio" id="laki" name="jk" value="Laki-laki"> Laki-laki</label> <!-- Pilihan laki-laki -->
+      <label><input type="radio" id="perempuan" name="jk" value="Perempuan"> Perempuan</label> <!-- Pilihan perempuan -->
+      <label><input type="radio" id="rahasia" name="jk" value="Rahasia"> Rahasia</label> <!-- Pilihan rahasia -->
+    </div>
+
+    <label>Hobi:</label> <!-- Label untuk kelompok checkbox -->
+    <div class="inline-options"> <!-- Container checkbox agar sejajar -->
+      <label><input type="checkbox" id="hobi1" name="hobi" value="Membaca"> Membaca</label>
+      <label><input type="checkbox" id="hobi2" name="hobi" value="Musik"> Musik</label>
+      <label><input type="checkbox" id="hobi3" name="hobi" value="Traveling"> Traveling</label>
+      <label><input type="checkbox" id="hobi4" name="hobi" value="Memasak"> Memasak</label>
+      <label><input type="checkbox" id="hobi5" name="hobi" value="Olahraga"> Olahraga</label>
+      <label><input type="checkbox" id="hobi6" name="hobi" value="Tidur"> Tidur</label>
+      <label><input type="checkbox" id="hobi7" name="hobi" value="Menonton"> Menonton</label>
+      <label><input type="checkbox" id="hobi8" name="hobi" value="Menari"> Menari</label>
+    </div>
+
+    <button type="submit">Kirim Data</button> <!-- Tombol kirim form -->
+  </form>
+
+  <div id="hasil" class="output">Hasil biodata Anda akan ada di sini</div> <!-- Area menampilkan hasil input -->
+
+  <footer><a href="index.html">&larr; Kembali ke Beranda</a></footer> <!-- Footer dengan link kembali -->
+
+  <!-- Script interaktif untuk menampilkan hasil form -->
+  <script>
+    const form = document.getElementById('biodataForm'); // Ambil elemen form berdasarkan ID
+    const hasil = document.getElementById('hasil'); // Ambil elemen hasil tampilan
+
+    form.addEventListener('submit', function(e) { // Saat form disubmit
+      e.preventDefault(); // Mencegah halaman refresh
+      const nama = document.getElementById('nama').value; // Ambil isi input nama
+      const umur = document.getElementById('umur').value; // Ambil isi input umur
+      const jk = document.querySelector('input[name=\"jk\"]:checked')?.value || '-'; // Cek radio yang dipilih
+      const hobiList = Array.from(document.querySelectorAll('input[name=\"hobi\"]:checked')).map(cb => cb.value); // Ambil semua checkbox yang dicentang
+
+      // Menampilkan hasil ke dalam elemen hasil
+      hasil.innerHTML = `
+        <h3>Biodata saya:</h3>
+        <p><strong>Nama:</strong> ${nama}</p>
+        <p><strong>Umur:</strong> ${umur}</p>
+        <p><strong>Jenis Kelamin:</strong> ${jk}</p>
+        <p><strong>Hobi:</strong> ${hobiList.join(', ') || '-'}</p>
+      `;
+    });
+  </script>
+</body>
+</html>

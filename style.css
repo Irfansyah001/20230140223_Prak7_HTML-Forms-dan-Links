@@ -1,0 +1,64 @@
+body.dark-mode {
+    font-family: 'Segoe UI', sans-serif; /* Mengatur jenis font teks menjadi Segoe UI, jika tidak tersedia akan gunakan sans-serif */
+    background: #000000;                /* Warna latar belakang halaman hitam */
+    color: #f0f0f0;                     /* Warna teks utama menjadi abu terang */
+    margin: 0;                          /* Menghilangkan jarak luar bawaan pada body */
+    padding: 0;                         /* Menghilangkan jarak dalam bawaan pada body */
+}
+
+header {
+    background: #000000;                /* Warna latar belakang header hitam */
+    color: white;                       /* Warna teks header putih */
+    padding: 30px 20px;                 /* Memberi ruang di atas-bawah 30px dan kanan-kiri 20px */
+    text-align: center;                 /* Teks rata tengah */
+}
+
+nav {
+    background: #000000;                /* Warna latar belakang navigasi hitam */
+    padding: 15px;                      /* Ruang dalam area navigasi 15px */
+    text-align: center;                 /* Menu link ditampilkan di tengah */
+}
+
+nav a {
+    margin: 0 15px;                     /* Jarak kanan dan kiri antar link 15px */
+    text-decoration: none;             /* Menghilangkan garis bawah link */
+    color: #fff200;                    /* Warna teks link kuning cerah */
+    font-weight: bold;                 /* Teks link dibuat tebal */
+}
+
+nav a:hover {
+    color: #ffffff;                    /* Saat mouse diarahkan, warna teks link jadi putih */
+}
+
+footer {
+    text-align: center;                /* Isi footer rata tengah */
+    padding: 5px;                      /* Ruang dalam footer 5px */
+    background: #000000;               /* Warna latar footer hitam */
+    color: #ccc;                       /* Warna teks abu-abu terang */
+    position: fixed;                   /* Footer tetap berada di bawah layar walau di-scroll */
+    bottom: 0;                         /* Menempel di bagian bawah layar */
+    width: 100%;                       /* Lebar footer sepanjang layar */
+}
+
+.profile-container {
+    display: flex;                     /* Menggunakan flexbox untuk mengatur posisi */
+    justify-content: center;          /* Menyusun isi ke tengah secara horizontal */
+    align-items: center;              /* Menyusun isi ke tengah secara vertikal */
+    margin: 25px 0;                    /* Jarak atas dan bawah 25px, kanan-kiri 0 */
+}
+
+.profile-img {
+    width: 280px;                      /* Lebar gambar 280 piksel */
+    height: 280px;                     /* Tinggi gambar 280 piksel */
+    border-radius: 50%;               /* Membuat gambar menjadi lingkaran */
+    object-fit: cover;                /* Menjaga rasio gambar tetap proporsional sambil menutupi elemen */
+    border: 4px solid #ffea00;        /* Garis tepi kuning terang setebal 4px */
+    box-shadow: 0 0 20px rgba(0,0,0,1);/* Efek bayangan gelap di sekitar gambar */
+}
+
+.intro-text {
+    text-align: center;               /* Teks rata tengah */
+    margin-bottom: 30px;              /* Jarak bawah 30px */
+    font-size: 1.1em;                 /* Ukuran huruf sedikit lebih besar dari standar */
+    color: #d0d0d0;                   /* Warna teks abu terang */
+}

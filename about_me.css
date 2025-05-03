@@ -1,0 +1,84 @@
+body.dark-about {
+  font-family: 'Segoe UI', sans-serif;   /* Mengatur jenis font utama */
+  background-color: #121212;             /* Warna latar belakang gelap (dark mode) */
+  color: #ffffff;                        /* Warna teks utama putih */
+  margin: 0;                             /* Menghapus margin bawaan */
+  padding: 30px 20px;                    /* Padding atas-bawah 30px, kiri-kanan 20px */
+}
+
+header {
+  text-align: center;                    /* Header rata tengah */
+  margin-bottom: 20px;                   /* Jarak bawah 20px dari elemen selanjutnya */
+}
+
+.about-container {
+  display: flex;                         /* Menggunakan flexbox untuk tata letak horizontal */
+  flex-direction: row;                  /* Elemen ditata secara horizontal */
+  justify-content: center;              /* Isi diletakkan di tengah secara horizontal */
+  align-items: flex-start;              /* Posisi vertikal dimulai dari atas */
+  flex-wrap: wrap;                      /* Membungkus elemen ke bawah jika sempit */
+  gap: 30px;                             /* Jarak antar elemen 30px */
+  max-width: 900px;                      /* Batas maksimal lebar container */
+  margin: auto;                          /* Memposisikan container ke tengah halaman */
+}
+
+.about-profile {
+  flex: 1;                               /* Kolom foto ambil 1 bagian dari 3 */
+  text-align: center;                    /* Konten dalam kolom ini rata tengah */
+}
+
+.about-profile img {
+  width: 220px;                          /* Lebar gambar 220px */
+  height: 220px;                         /* Tinggi gambar 220px */
+  border-radius: 50%;                    /* Membuat gambar berbentuk lingkaran */
+  object-fit: cover;                     /* Menyesuaikan gambar tanpa merusak rasio */
+  border: 4px solid #a259ff;             /* Border ungu terang di sekitar gambar */
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);   /* Bayangan hitam lembut di sekeliling gambar */
+}
+
+.bio-box {
+  flex: 2;                               /* Kolom teks ambil 2 bagian dari 3 */
+  background: #1e1e1e;                   /* Warna latar belakang card teks */
+  padding: 25px 30px;                    /* Padding dalam konten box */
+  border-radius: 10px;                   /* Sudut box dibulatkan */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);/* Bayangan gelap lembut */
+  line-height: 1.6;                      /* Jarak antar baris teks */
+  font-size: 18px;                       /* Ukuran teks utama */
+}
+
+.skills-list {
+  margin-top: 20px;                      /* Jarak atas daftar skill dari teks sebelumnya */
+  padding-left: 20px;                    /* Menjorok ke kanan 20px (indentasi) */
+  font-size: 16px;                       /* Ukuran font sedikit lebih kecil */
+}
+
+.skills-list li {
+  margin-bottom: 8px;                    /* Jarak bawah antar item skill */
+}
+
+.social-links {
+  margin-top: 25px;                      /* Jarak atas dari daftar skill */
+  text-align: left;                      /* Teks link diletakkan ke kiri */
+}
+
+.social-links a {
+  margin-right: 15px;                    /* Jarak kanan antar link */
+  color: #a259ff;                        /* Warna link ungu terang */
+  text-decoration: none;                 /* Menghilangkan garis bawah default */
+  font-weight: bold;                     /* Teks link dibuat tebal */
+}
+
+.social-links a:hover {
+  text-decoration: underline;            /* Tambah garis bawah saat mouse diarahkan */
+}
+
+footer {
+  text-align: center;                    /* Teks footer rata tengah */
+  margin-top: 30px;                      /* Jarak atas dari konten utama */
+}
+
+footer a {
+  color: #80d8ff;                        /* Warna biru terang untuk link footer */
+  text-decoration: none;                 /* Menghilangkan garis bawah */
+  font-weight: bold;                     /* Teks link ditebalkan */
+}

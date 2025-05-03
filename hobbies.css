@@ -1,0 +1,45 @@
+body.dark-hobbies {
+  font-family: 'Segoe UI', sans-serif;    /* Mengatur font utama halaman agar terlihat modern dan bersih */
+  background-color: #121212;              /* Warna latar belakang gelap untuk dark mode */
+  color: #ffffff;                         /* Warna teks default putih */
+  margin: 0;                              /* Menghapus margin default browser */
+  padding: 30px 20px;                     /* Memberi ruang di dalam halaman atas-bawah 30px, kiri-kanan 20px */
+}
+  
+header {
+  text-align: center;                     /* Judul di tengah halaman */
+  margin-bottom: 25px;                    /* Jarak bawah 25px dari elemen setelahnya */
+}
+  
+.hobbies-box {
+  max-width: 700px;                       /* Batas maksimal lebar kontainer daftar hobi */
+  margin: auto;                           /* Menempatkan box di tengah halaman */
+  background: #1e1e1e;                    /* Warna latar dalam box lebih terang sedikit dari latar body */
+  padding: 30px;                          /* Ruang dalam seluruh sisi box */
+  border-radius: 12px;                    /* Membulatkan sudut kotak */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Efek bayangan gelap lembut di sekitar box */
+  font-size: 18px;                        /* Ukuran teks di dalam box */
+}
+  
+.hobbies-box ul {
+  list-style: none;                       /* Menghilangkan bullet bawaan dari daftar */
+  padding: 0;                             /* Menghapus padding bawaan dari <ul> */
+}
+  
+.hobbies-box li {
+  margin-bottom: 16px;                    /* Jarak bawah antar item hobi */
+  line-height: 1.7;                       /* Spasi antar baris teks agar nyaman dibaca */
+  display: flex;                          /* Menjadikan item sejajar secara horizontal */
+  align-items: center;                    /* Menyelaraskan ikon emoji dan teks secara vertikal */
+}
+  
+footer {
+  text-align: center;                     /* Isi footer diratakan ke tengah */
+  margin-top: 30px;                       /* Jarak atas footer dari konten sebelumnya */
+}
+  
+footer a {
+  color: #80d8ff;                         /* Warna biru terang untuk link */
+  text-decoration: none;                  /* Menghapus garis bawah default */
+  font-weight: bold;                      /* Membuat teks link lebih tebal */
+}

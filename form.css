@@ -1,0 +1,85 @@
+body.dark-form {
+    font-family: 'Segoe UI', sans-serif; /* Menggunakan font modern dan bersih */
+    background: #121212;                 /* Latar belakang halaman gelap (dark mode) */
+    color: #ffffff;                     /* Warna teks default putih */
+    margin: 0;                           /* Menghilangkan margin bawaan */
+    padding: 20px;                       /* Menambahkan ruang dalam di sekeliling isi */
+}
+
+header {
+    text-align: center;                 /* Teks header rata tengah */
+    margin-bottom: 20px;               /* Jarak bawah 20px dari elemen selanjutnya */
+}
+
+form {
+    max-width: 500px;                  /* Lebar maksimum form 500px */
+    margin: auto;                      /* Form ditengah secara horizontal */
+    background: #1f1f1f;               /* Warna latar belakang form lebih terang dari body */
+    padding: 25px;                     /* Ruang dalam 25px di semua sisi */
+    border-radius: 10px;               /* Sudut membulat 10px */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Efek bayangan gelap di sekitar form */
+}
+
+input[type="text"], input[type="number"] {
+    width: 96%;                        /* Lebar input hampir penuh, dengan sedikit margin */
+    padding: 10px;                     /* Ruang dalam untuk teks input */
+    margin-bottom: 15px;              /* Jarak bawah antar input */
+    border-radius: 5px;               /* Sudut input dibulatkan */
+    border: none;                     /* Menghilangkan garis tepi default */
+    background: #2b2b2b;              /* Warna latar input gelap */
+    color: white;                     /* Warna teks input putih */
+}
+
+label {
+    display: block;                   /* Label ditampilkan dalam baris sendiri */
+    margin-bottom: 5px;              /* Jarak bawah 5px dari elemen berikutnya */
+}
+
+.inline-options {
+    display: flex;                   /* Mengatur isinya sejajar secara horizontal */
+    flex-wrap: wrap;                 /* Membungkus jika panjang melebihi baris */
+    gap: 25px;                       /* Jarak antar elemen 25px */
+    margin-bottom: 15px;            /* Jarak bawah dari elemen berikutnya */
+    align-items: center;            /* Posisi vertikal tengah antar item */
+}
+
+.inline-options label {
+    display: flex;                  /* Label dalam baris, sejajar dengan input */
+    align-items: center;           /* Teks dan checkbox/radio sejajar vertikal */
+    gap: 5px;                       /* Jarak antara input dan teks label */
+    font-weight: normal;           /* Berat huruf biasa (tidak tebal) */
+}
+
+button {
+    background-color: #6a0dad;     /* Warna ungu untuk tombol */
+    color: white;                  /* Warna teks putih */
+    border: none;                  /* Menghilangkan garis tepi tombol */
+    padding: 10px 20px;            /* Ruang dalam atas-bawah 10px, kanan-kiri 20px */
+    font-size: 16px;               /* Ukuran huruf 16px */
+    cursor: pointer;              /* Kursor berubah jadi tangan saat diarahkan */
+    border-radius: 5px;           /* Membulatkan sudut tombol */
+    width: 100%;                  /* Tombol memenuhi lebar form */
+}
+
+button:hover {
+    background-color: #530b99;     /* Warna tombol berubah saat diarahkan */
+}
+
+.output {
+    max-width: 500px;              /* Lebar maksimum kotak hasil */
+    margin: 30px auto;             /* Jarak atas 30px, dan ditengah */
+    padding: 20px;                 /* Ruang dalam 20px */
+    background-color: #1a1a1a;     /* Warna latar gelap */
+    border-radius: 10px;           /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); /* Bayangan lembut di sekitar kotak */
+}
+
+footer {
+    margin-top: 30px;              /* Jarak atas 30px dari elemen sebelumnya */
+    text-align: center;            /* Posisi teks footer di tengah */
+}
+
+footer a {
+    color: #80d8ff;                /* Warna biru terang untuk link */
+    text-decoration: none;         /* Menghilangkan garis bawah */
+}
